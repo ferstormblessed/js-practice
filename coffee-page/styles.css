@@ -1,0 +1,164 @@
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.header {
+    display: flex;
+    color: #fbf2c0;
+    background-color: #43281c;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.logo {
+    height: 30x;
+    width: 30px;
+    margin: 5px;
+}
+
+.page {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "order payment"
+        "total total";
+}
+
+.order {
+    grid-area: order;
+}
+
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.box-title {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    border-bottom: 2px solid #DDB892;
+    display: grid;
+    row-gap: 8px;
+    padding: 10px 0;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "quantity title   price"
+    "quantity options price";
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item-quantity {
+    grid-area: quantity;
+}
+
+.item-title{
+    grid-area: title;
+    font-weight: bold;
+}
+
+.item-price{
+    grid-area: price;
+    font-weight: bold;
+}
+
+.item-option-list{
+    grid-area: options;
+    color: #B08968;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.item-option {
+    margin-bottom: 5px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-input-label {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.user-input {
+    background-color: rgb(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
+
+.short-input {
+    max-width: 200px;
+}
+
+.total {
+    grid-area: total;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.totals-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.final-totals {
+    font-weight: bold;
+}
+
+.checkout {
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
