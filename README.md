@@ -1,4 +1,4 @@
-# JS Practice / Little projects
+# Little web projects
 
 Creation of little projects to practice Web techonlogies: Javascript, HTML and CSS
 
